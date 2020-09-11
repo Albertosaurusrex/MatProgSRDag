@@ -6,9 +6,18 @@
  
 <script type="text/javascript">
 
-	var previousAB = Math.sqrt(2);
 	var numberOfIterations = 0;
 	var allResults = "";
+
+	var previousAB = Math.sqrt(2);
+	var AO = 1; 
+	var BO = 1;
+	var AB = Math.sqrt(2);
+	var AD = 1-Math.sqrt(Math.pow(1,2)-Math.pow(Math.sqrt(2)/2, 2))
+	var BD = Math.pow(Math.sqrt(2)/2, 2)
+	var DO = Math.sqrt(Math.pow(1,2)-Math.pow(Math.sqrt(2)/2, 2))
+	var AB = Math.sqrt(Math.pow(AD,2 ) + Math.pow(BD, 2))
+	var previousAO = 1;
 
 	function iterationsfunction()
 	{
@@ -22,7 +31,7 @@
 <body>
 
 <button type="button" onclick="iterationsfunction()"> iteration </button>
-<p id="indhold"> her skrives min beregnede Pi </p>
+<p id="indhold">Her skrives min beregnede Pi </p>
 
 </body>
 </html>
