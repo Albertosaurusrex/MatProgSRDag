@@ -1,1 +1,28 @@
+<html>
+<head>
 
+<title>Beregn pi</title>
+<link rel='icon' href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Pi-symbol.svg/1200px-Pi-symbol.svg.png" type='image/x-icon'/ >
+ 
+<script type="text/javascript">
+
+	var previousAB = Math.sqrt(2);
+	var numberOfIterations = 0;
+	var allResults = "";
+
+	function iterationsfunction()
+	{
+	numberOfIterations += 1;
+	document.getElementById("indhold").innerHTML = numberOfIterations;
+	}
+
+</script>
+
+</head>
+<body>
+
+<button type="button" onclick="iterationsfunction()"> iteration </button>
+<p id="indhold"> her skrives min beregnede Pi </p>
+
+</body>
+</html>
