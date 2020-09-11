@@ -14,7 +14,7 @@
 	var BO = 1;
 	var AB = Math.sqrt(2);
 	var AD = 1-Math.sqrt(Math.pow(1,2)-Math.pow(Math.sqrt(2)/2, 2))
-	var BD = Math.pow(Math.sqrt(2)/2, 2)
+	var BD = Math.sqrt(2)/2
 	var DO = Math.sqrt(Math.pow(1,2)-Math.pow(Math.sqrt(2)/2, 2))
 	var AB = Math.sqrt(Math.pow(AD,2 ) + Math.pow(BD, 2))
 	var previousAO = 1;
@@ -22,6 +22,9 @@
 	function iterationsfunction()
 	{
 	numberOfIterations += 1;
+	
+
+	
 	document.getElementById("indhold").innerHTML = numberOfIterations;
 	}
 
