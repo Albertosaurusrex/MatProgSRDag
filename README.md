@@ -5,4 +5,4 @@ It uses the Archimedes' method of finding the approximation - more info here; ht
 
 
 You can test the site here; 
-https://albertosaurusrexdk.github.io/MatProgSRDag/
+https://albertosaurusrexdk.github.io/MatProgSRDag/index.html
