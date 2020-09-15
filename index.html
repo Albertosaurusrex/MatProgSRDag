@@ -12,24 +12,23 @@
 
 	function iterationsfunction()
 	{
+		var newAB = 0; 
+		var AD = 0;
+		var AO = 1;
+		var BD = 0.5 * previousAB;
+		var previousAO = 1;
+		var DO = Math.sqrt(Math.pow(previousAO, 2) - Math.pow(BD, 2));
+		
+		numberOfIterations++;
+		
+		AD = AO - DO;
+		newAB = Math.sqrt(Math.pow(AD, 2) + Math.pow(BD, 2));
 
-	var newAB = 0; 
-	var AD = 0;
-	var AO = 1;
-	var BD = 0.5 * previousAB;
-	var previousAO = 1;
-	var DO = Math.sqrt(Math.pow(previousAO, 2) - Math.pow(BD, 2));
-	
-	numberOfIterations++;
-	
-	AD = AO - DO;
-	newAB = Math.sqrt(Math.pow(AD, 2) + Math.pow(BD, 2));
+		allResults = allResults + numberOfIterations + ": " + (newAB * (Math.pow(2, numberOfIterations + 1))) + "<br>";
+		
+		previousAB = newAB;
 
-	allResults = allResults + numberOfIterations + ": " + (newAB * (Math.pow(2, numberOfIterations + 1))) + "<br>";
-	
-	previousAB = newAB;
-
-	document.getElementById("indhold").innerHTML = allResults;
+		document.getElementById("indhold").innerHTML = allResults;
 	}
 
 </script>
